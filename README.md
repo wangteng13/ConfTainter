@@ -3,7 +3,7 @@
 `ConfTainter` is a **Static Taint Analysis Infrastructure** for configuration options.
 It is based on LLVM IR, and analyzes the control and data dependency starting from the specified configuration variable(s)
 
-- [ConfTainter: Static Taint Analysis For Configuration Options](https://github.com/Leopard-Lab/Leopard-Lab.github.io/blob/master/paper/ase23-ConfTainter.pdf)  
+- [ConfTainter: Static Taint Analysis For Configuration Options](https://leopard-lab.github.io/paper/ase23-ConfTainter.pdf)   
 Teng Wang, Haochen He, Xiaodong Liu, Shanshan Li, Zhouyang Jia, Yu Jiang, Qing Liao, Wang Li. "ConfTainter: Static Taint Analysis For Configuration Options", In Proceedings of the 38th ACM/IEEE International Conference on Automated Software Engineering (ASE 2023), 11-15 September, 2023, Luxembourg. 
 
 
