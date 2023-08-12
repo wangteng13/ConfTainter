@@ -1,0 +1,76 @@
+GlobalVariable Name: vacuum_freeze_min_age  autovacuum_freeze_max_age
+%29 = icmp slt i32 %26, %28, !dbg !149584
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:409:14
+
+GlobalVariable Name: vacuum_freeze_table_age  autovacuum_freeze_max_age
+%84 = fcmp olt double %80, %83, !dbg !149635
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:452:17
+
+GlobalVariable Name: autovacuum_max_workers  MaxConnections
+%16 = icmp sgt i32 %14, %15, !dbg !149571
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/deadlock.c:378:41
+
+GlobalVariable Name: autovacuum_max_workers  MaxConnections
+%30 = icmp sle i32 %28, %29, !dbg !149591
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/deadlock.c:317:50
+
+GlobalVariable Name: autovacuum_vac_cost_delay  VacuumCostPageHit
+%27 = icmp sgt i32 %24, %26, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1171:12
+
+GlobalVariable Name: autovacuum_vac_cost_delay  VacuumCostPageMiss
+%27 = icmp sgt i32 %24, %26, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1171:12
+
+GlobalVariable Name: autovacuum_vac_cost_delay  VacuumCostPageDirty
+%27 = icmp sgt i32 %24, %26, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1171:12
+
+GlobalVariable Name: autovacuum_vac_cost_delay  VacuumCostLimit
+%27 = icmp sgt i32 %24, %26, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1171:12
+
+GlobalVariable Name: autovacuum_vac_cost_delay  VacuumCostDelay
+%27 = icmp sgt i32 %24, %26, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1171:12
+
+GlobalVariable Name: BgWriterDelay  NBuffers ??
+%162 = icmp slt i32 %160, %161, !dbg !149753
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/buffer/bufmgr.c:1559:45
+
+GlobalVariable Name: ReservedBackends  MaxConnections
+%167 = icmp sge i32 %165, %166, !dbg !149758
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/postmaster.c:762:23
+
+GlobalVariable Name: max_wal_senders  MaxConnections
+%173 = icmp sge i32 %171, %172, !dbg !149768
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/postmaster.c:767:22
+
+GlobalVariable Name: VacuumCostPageHit  VacuumCostLimit
+%17 = icmp sge i32 %15, %16, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1166:21
+
+GlobalVariable Name: VacuumCostPageHit  VacuumCostDelay
+%27 = icmp sgt i32 %24, %26, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1171:12
+
+GlobalVariable Name: VacuumCostPageMiss  VacuumCostLimit
+%17 = icmp sge i32 %15, %16, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1166:21
+
+GlobalVariable Name: VacuumCostPageMiss  VacuumCostDelay
+%27 = icmp sgt i32 %24, %26, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1171:12
+
+GlobalVariable Name: VacuumCostPageDirty  VacuumCostLimit
+%17 = icmp sge i32 %15, %16, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1166:21
+
+GlobalVariable Name: VacuumCostPageDirty  VacuumCostDelay
+%27 = icmp sgt i32 %24, %26, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1171:12
+
+GlobalVariable Name: VacuumCostLimit  VacuumCostDelay
+%27 = icmp sgt i32 %24, %26, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/commands/vacuum.c:1171:12
+

@@ -1,0 +1,24 @@
+Found 3 Control Deps.
+
+
+ Control Deps between GlobalVariable Name: global_allows  global_disallows
+br i1 %166, label %167, label %168, !dbg !298979
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/bind.c:304:8
+%179 = load i64, i64* @global_disallows, align 8, !dbg !298994, !tbaa !298977
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/bind.c:318:16
+
+ Control Deps between GlobalVariable Name: global_disallows  global_allows
+br i1 %23, label %30, label %24, !dbg !298864
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/controls.c:1104:3
+%31 = load i64, i64* @global_allows, align 8, !dbg !298873, !tbaa !298862
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/controls.c:1110:10
+br i1 %23, label %30, label %24, !dbg !298864
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/controls.c:1104:3
+br i1 %33, label %34, label %40, !dbg !298876
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/controls.c:1111:3
+
+ Control Deps between GlobalVariable Name: global_gentlehup  slapd_daemon_threads
+br i1 %7, label %8, label %11, !dbg !298835
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/daemon.c:3012:20
+%14 = load i32, i32* @slapd_daemon_threads, align 4, !dbg !298840, !tbaa !298828
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/daemon.c:3020:14

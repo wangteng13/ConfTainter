@@ -1,0 +1,458 @@
+Found 18 Control Deps.
+
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.common_log  _SquidConfig.onoff.log_fqdn
+br i1 %57, label %96, label %60, !dbg !40134
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/access_log.c:255:9
+br i1 %59, label %102, label %97, !dbg !40176
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/access_log.c:189:9
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+%948 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 26), align 8, !dbg !40897, !tbaa !40898
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1129:59
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+%949 = add nsw i64 %948, %947, !dbg !40923
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1129:50
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+store i64 %949, i64* %950, align 8, !dbg !40925, !tbaa !40926
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1129:28
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+%950 = getelementptr inbounds %struct._acl_proxy_auth_user, %struct._acl_proxy_auth_user* %899, i64 0, i32 3, !dbg !40924
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1129:17
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateIpTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+%952 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 27), align 8, !dbg !40928, !tbaa !40929
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1130:56
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateIpTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+%953 = add nsw i64 %952, %951, !dbg !40930
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1130:47
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateIpTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+store i64 %953, i64* %954, align 8, !dbg !40932, !tbaa !40933
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1130:31
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateIpTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+%954 = getelementptr inbounds %struct._acl_proxy_auth_user, %struct._acl_proxy_auth_user* %899, i64 0, i32 5, !dbg !40931
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1130:17
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateIpTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+%1001 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 27), align 8, !dbg !40973, !tbaa !40929
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1151:56
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateIpTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+%1002 = add nsw i64 %1001, %1000, !dbg !40974
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1151:47
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.authenticateIpTTLStrict  _SquidConfig.authenticateIpTTL
+br i1 %1048, label %1053, label %1051, !dbg !41015
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1165:10
+store i64 %1002, i64* %1004, align 8, !dbg !40976, !tbaa !40933
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/acl.c:1151:31
+
+ Control Deps between GlobalVariable Name: _SquidConfig.Accel.single_host  _SquidConfig.Timeout.connect
+br i1 %48, label %49, label %51, !dbg !40092
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:267:53
+%50 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 11, i32 2), align 8, !dbg !40095, !tbaa !40097
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:271:28
+
+ Control Deps between GlobalVariable Name: _SquidConfig.Accel.single_host  _SquidConfig.Timeout.connect
+br i1 %48, label %49, label %51, !dbg !40092
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:267:53
+%58 = phi i64 [ %50, %49 ], [ %54, %51 ], [ %34, %26 ], !dbg !40127
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:0:0
+
+ Control Deps between GlobalVariable Name: _SquidConfig.Accel.single_host  _SquidConfig.Timeout.connect
+br i1 %48, label %49, label %51, !dbg !40092
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:267:53
+%54 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 11, i32 2), align 8, !dbg !40126, !tbaa !40097
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:275:28
+
+ Control Deps between GlobalVariable Name: _SquidConfig.Accel.single_host  _SquidConfig.Timeout.peer_connect
+br i1 %48, label %49, label %51, !dbg !40092
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:267:53
+%58 = phi i64 [ %50, %49 ], [ %54, %51 ], [ %34, %26 ], !dbg !40127
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:0:0
+
+ Control Deps between GlobalVariable Name: _SquidConfig.Accel.single_host  _SquidConfig.Accel.host
+br i1 %48, label %49, label %51, !dbg !40092
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:267:53
+%56 = phi i8* [ %46, %49 ], [ %52, %51 ], [ %28, %26 ], !dbg !40127
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:0:0
+
+ Control Deps between GlobalVariable Name: _SquidConfig.Accel.single_host  _SquidConfig.Accel.host
+br i1 %48, label %49, label %51, !dbg !40092
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:267:53
+%60 = tail call i32 @pconnPop(i8* %56, i16 zeroext %59) #17, !dbg !40129
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/forward.c:277:15
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.accel_with_proxy  _SquidConfig.Port.icp
+br i1 %9, label %10, label %75, !dbg !40062
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:410:26
+%11 = load i16, i16* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 15, i32 0), align 8, !dbg !40063, !tbaa !40065
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:412:29
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.accel_with_proxy  _SquidConfig.Port.icp
+br i1 %9, label %10, label %75, !dbg !40062
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:410:26
+%12 = zext i16 %11 to i32, !dbg !40093
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:412:9
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.accel_with_proxy  _SquidConfig.Port.icp
+br i1 %9, label %10, label %75, !dbg !40062
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:410:26
+%13 = icmp eq i16 %11, 0, !dbg !40094
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:412:34
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.accel_with_proxy  _SquidConfig.Port.icp
+br i1 %9, label %10, label %75, !dbg !40062
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:410:26
+br i1 %13, label %75, label %14, !dbg !40095
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:412:9
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.accel_with_proxy  _SquidConfig.mcast_group_list
+br i1 %9, label %10, label %75, !dbg !40062
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:410:26
+%23 = load %struct._wordlist*, %struct._wordlist** getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 43), align 8, !dbg !40108, !tbaa !40110
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:0:0
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.accel_with_proxy  _SquidConfig.mcast_group_list
+br i1 %9, label %10, label %75, !dbg !40062
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:410:26
+%24 = icmp eq %struct._wordlist* %23, null, !dbg !40111
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:429:5
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.accel_with_proxy  _SquidConfig.mcast_group_list
+br i1 %9, label %10, label %75, !dbg !40062
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:410:26
+br i1 %24, label %32, label %25, !dbg !40111
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:429:5
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.icp_hit_stale  _SquidConfig.onoff.test_reachability
+br i1 %242, label %243, label %246, !dbg !40440
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:174:9
+%274 = load i32, i32* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 55, i32 12), align 8, !dbg !40484, !tbaa !40486
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:261:19
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.icp_hit_stale  _SquidConfig.onoff.test_reachability
+br i1 %242, label %243, label %246, !dbg !40440
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:174:9
+%275 = icmp ne i32 %274, 0, !dbg !40487
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:261:6
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.icp_hit_stale  _SquidConfig.onoff.test_reachability
+br i1 %242, label %243, label %246, !dbg !40440
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:174:9
+%277 = and i1 %276, %275, !dbg !40489
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:261:37
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.icp_hit_stale  _SquidConfig.onoff.test_reachability
+br i1 %242, label %243, label %246, !dbg !40440
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:174:9
+br i1 %277, label %278, label %283, !dbg !40489
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:261:37
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.icp_hit_stale  _SquidConfig.onoff.test_reachability
+br i1 %242, label %243, label %246, !dbg !40440
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:174:9
+%349 = load i32, i32* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 55, i32 12), align 8, !dbg !40579, !tbaa !40486
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:272:26
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.icp_hit_stale  _SquidConfig.onoff.test_reachability
+br i1 %242, label %243, label %246, !dbg !40440
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:174:9
+%350 = icmp ne i32 %349, 0, !dbg !40581
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:272:13
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.icp_hit_stale  _SquidConfig.onoff.test_reachability
+br i1 %242, label %243, label %246, !dbg !40440
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:174:9
+%352 = and i1 %351, %350, !dbg !40583
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:272:44
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.icp_hit_stale  _SquidConfig.onoff.test_reachability
+br i1 %242, label %243, label %246, !dbg !40440
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:174:9
+br i1 %352, label %358, label %380, !dbg !40583
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/icp_v2.c:272:44
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.Timeout.deadPeer
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%81 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 11, i32 7), align 8, !dbg !40211, !tbaa !40212
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:177:62
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.Timeout.deadPeer
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%82 = icmp sgt i64 %80, %81, !dbg !40213
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:177:45
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.Timeout.deadPeer
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+br i1 %82, label %86, label %83, !dbg !40214
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:177:9
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%45 = load %struct._peer*, %struct._peer** getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 46), align 8, !dbg !40169
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:425:17
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%46 = select i1 %44, %struct._peer* %45, %struct._peer* %43, !dbg !40170
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:424:6
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%50 = getelementptr inbounds %struct._peer, %struct._peer* %46, i64 0, i32 0, !dbg !40172
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:426:50
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%51 = load i8*, i8** %50, align 8, !dbg !40172, !tbaa !40173
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:426:50
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+tail call void (i8*, ...) @_db_print(i8* getelementptr inbounds ([27 x i8], [27 x i8]* @.str.27.2794, i64 0, i64 0), i8* %51) #17, !dbg !40171
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:426:2
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%226 = getelementptr inbounds %struct._peer, %struct._peer* %46, i64 0, i32 17, !dbg !40345
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:423:61
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%37 = phi %struct._peer** [ @first_ping, %32 ], [ %226, %220 ]
+InstLoc: :0:0
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%43 = load %struct._peer*, %struct._peer** %37, align 8, !dbg !40165, !tbaa !40166
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:0:0
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%44 = icmp eq %struct._peer* %43, null, !dbg !40167
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:424:8
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.query_icmp  _SquidConfig.peers
+br i1 %123, label %129, label %124, !dbg !40248
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:454:10
+%53 = tail call fastcc i32 @peerAllowedToUse(%struct._peer* %46, %struct._request_t* %0) #17, !dbg !40183
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:161:10
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  opt_accel_uses_host
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%470 = load i32, i32* @opt_accel_uses_host, align 4, !dbg !40669, !tbaa !40168
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2399:6
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  opt_accel_uses_host
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%471 = icmp eq i32 %470, 0, !dbg !40669
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2399:6
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  opt_accel_uses_host
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+br i1 %471, label %498, label %472, !dbg !40670
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2399:26
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Sockaddr.http
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%708 = load %struct._sockaddr_in_list*, %struct._sockaddr_in_list** getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 16, i32 0), align 8, !dbg !40886, !tbaa !40887
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2656:21
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Sockaddr.http
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%709 = getelementptr inbounds %struct._sockaddr_in_list, %struct._sockaddr_in_list* %708, i64 0, i32 0, i32 1, !dbg !40886
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2656:21
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Sockaddr.http
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%710 = load i16, i16* %709, align 2, !dbg !40886, !tbaa !40888
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2656:21
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Sockaddr.http
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%711 = call i16 asm "rorw $$8, ${0:w}", "=r,0,~{cc},~{dirflag},~{fpsr},~{flags}"(i16 %710) #24, !dbg !40890, !srcloc !40892
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2656:21
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Sockaddr.http
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%723 = load %struct._sockaddr_in_list*, %struct._sockaddr_in_list** getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 16, i32 0), align 8, !dbg !40904, !tbaa !40887
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2660:20
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Sockaddr.http
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%724 = getelementptr inbounds %struct._sockaddr_in_list, %struct._sockaddr_in_list* %723, i64 0, i32 0, i32 1, !dbg !40904
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2660:20
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Sockaddr.http
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%725 = load i16, i16* %724, align 2, !dbg !40904, !tbaa !40888
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2660:20
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Sockaddr.http
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%726 = call i16 asm "rorw $$8, ${0:w}", "=r,0,~{cc},~{dirflag},~{fpsr},~{flags}"(i16 %725) #24, !dbg !40905, !srcloc !40907
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2660:20
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestHeaderSize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%903 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 12), align 8, !dbg !41104, !tbaa !41107
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2747:33
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestHeaderSize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%904 = icmp ult i64 %897, %903, !dbg !41108
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2747:23
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestHeaderSize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+br i1 %904, label %944, label %905, !dbg !41109
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2747:7
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestHeaderSize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%914 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 12), align 8, !dbg !41114, !tbaa !41107
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2752:11
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestHeaderSize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+call void (i8*, ...) @_db_print(i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.193.655, i64 0, i64 0), i64 %914) #17, !dbg !41112
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2751:7
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestBodySize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%880 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 13), align 8, !dbg !41074, !tbaa !41076
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:1668:21
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestBodySize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%881 = icmp eq i64 %880, 0, !dbg !41077
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:1668:11
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestBodySize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%884 = or i1 %881, %883, !dbg !41079
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2729:12
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestBodySize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+br i1 %884, label %892, label %885, !dbg !41080
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2729:12
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.maxRequestBodySize
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%883 = icmp uge i64 %880, %882, !dbg !41078
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:1668:9
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Timeout.lifetime
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%630 = load i64, i64* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 11, i32 1), align 8, !dbg !40803, !tbaa !40804
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2624:40
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Timeout.lifetime
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%631 = trunc i64 %630 to i32, !dbg !40805
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2624:25
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.Timeout.lifetime
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%633 = call i32 @commSetTimeout(i32 %0, i32 %631, void (i32, i8*)* nonnull @clientLifetimeTimeout, i8* %632) #17, !dbg !40807
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2624:6
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.onoff.client_pconns
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%825 = load i32, i32* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 55, i32 22), align 8, !dbg !41019, !tbaa !41021
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:948:23
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.onoff.client_pconns
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+%826 = icmp eq i32 %825, 0, !dbg !41022
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:948:10
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.pipeline_prefetch  _SquidConfig.onoff.client_pconns
+br i1 %151, label %165, label %152, !dbg !40361
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:2588:6
+br i1 %826, label %827, label %831, !dbg !41023
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:948:9
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.ie_refresh  _SquidConfig.onoff.reload_into_ims
+br i1 %148, label %176, label %149, !dbg !40262
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:851:9
+%179 = load i32, i32* getelementptr inbounds (%struct._SquidConfig, %struct._SquidConfig* @Config, i64 0, i32 55, i32 14), align 8, !dbg !40295, !tbaa !40298
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:867:19
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.ie_refresh  _SquidConfig.onoff.reload_into_ims
+br i1 %148, label %176, label %149, !dbg !40262
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:851:9
+%180 = icmp eq i32 %179, 0, !dbg !40299
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:867:6
+
+ Control Deps between GlobalVariable Name: _SquidConfig.onoff.ie_refresh  _SquidConfig.onoff.reload_into_ims
+br i1 %148, label %176, label %149, !dbg !40262
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:851:9
+br i1 %180, label %185, label %181, !dbg !40300
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/client_side.c:867:6

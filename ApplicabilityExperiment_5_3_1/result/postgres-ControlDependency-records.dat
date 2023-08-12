@@ -1,0 +1,1712 @@
+Found 46 Control Deps.
+
+
+ Control Deps between GlobalVariable Name: DefaultXactReadOnly  max_predicate_locks_per_xact
+br i1 %64, label %65, label %73, !dbg !149808
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1710:19
+%230 = load i32, i32* @max_predicate_locks_per_xact, align 4, !dbg !149955
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1791:12
+
+ Control Deps between GlobalVariable Name: DefaultXactReadOnly  max_predicate_locks_per_xact
+br i1 %64, label %65, label %73, !dbg !149808
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1710:19
+%231 = sext i32 %230 to i64, !dbg !149955
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1791:12
+
+ Control Deps between GlobalVariable Name: DefaultXactReadOnly  max_predicate_locks_per_xact
+br i1 %64, label %65, label %73, !dbg !149808
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1710:19
+%232 = call %struct.HTAB* @hash_create(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.29.9887, i64 0, i64 0), i64 %231, %struct.HASHCTL* %10, i32 48), !dbg !149956
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1790:27
+
+ Control Deps between GlobalVariable Name: synchronous_commit  CommitDelay
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%222 = load i32, i32* @CommitDelay, align 4, !dbg !149827
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1137:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  CommitDelay
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%223 = icmp sgt i32 %222, 0, !dbg !149830
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1137:19
+
+ Control Deps between GlobalVariable Name: synchronous_commit  CommitDelay
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+br i1 %223, label %224, label %236, !dbg !149831
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1137:23
+
+ Control Deps between GlobalVariable Name: synchronous_commit  CommitDelay
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%234 = load i32, i32* @CommitDelay, align 4, !dbg !149837
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1139:14
+
+ Control Deps between GlobalVariable Name: synchronous_commit  CommitDelay
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%235 = sext i32 %234 to i64, !dbg !149837
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1139:14
+
+ Control Deps between GlobalVariable Name: synchronous_commit  CommitDelay
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+call void @pg_usleep(i64 %235), !dbg !149838
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1139:4
+
+ Control Deps between GlobalVariable Name: synchronous_commit  CommitSiblings
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%229 = load i32, i32* @CommitSiblings, align 4, !dbg !149834
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1138:26
+
+ Control Deps between GlobalVariable Name: synchronous_commit  CommitSiblings
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%230 = call signext i8 @MinimumActiveBackends(i32 %229), !dbg !149835
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1138:4
+
+ Control Deps between GlobalVariable Name: synchronous_commit  vacuum_freeze_min_age
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%247 = load i32*, i32** %7, align 8, !dbg !149850
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1154:44
+
+ Control Deps between GlobalVariable Name: synchronous_commit  vacuum_freeze_min_age
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+call void @TransactionIdCommitTree(i32 %245, i32 %246, i32* %247), !dbg !149851
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1154:4
+
+ Control Deps between GlobalVariable Name: synchronous_commit  vacuum_freeze_table_age
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%247 = load i32*, i32** %7, align 8, !dbg !149850
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1154:44
+
+ Control Deps between GlobalVariable Name: synchronous_commit  vacuum_freeze_table_age
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+call void @TransactionIdCommitTree(i32 %245, i32 %246, i32* %247), !dbg !149851
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1154:4
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%156 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149679
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:259:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%157 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %156, i32 0, i32 18, !dbg !149680
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:259:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%158 = getelementptr inbounds %struct.LockRelId, %struct.LockRelId* %157, i32 0, i32 1, !dbg !149681
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:259:18
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 0, i32* %158, align 4, !dbg !149682
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:259:26
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%153 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149675
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:258:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%154 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %153, i32 0, i32 18, !dbg !149676
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:258:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%155 = getelementptr inbounds %struct.LockRelId, %struct.LockRelId* %154, i32 0, i32 0, !dbg !149677
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:258:18
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 0, i32* %155, align 8, !dbg !149678
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:258:25
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%151 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149672
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:257:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%152 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %151, i32 0, i32 19, !dbg !149673
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:257:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 0, i32* %152, align 8, !dbg !149674
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:257:23
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%147 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149665
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:247:14
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%148 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %147, i32 0, i32 3, !dbg !149666
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:247:22
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%149 = call i32 @WaitLatch(%struct.Latch* %148, i32 17, i64 -1), !dbg !149667
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:247:3
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%110 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149631
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:185:19
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%111 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %110, i32 0, i32 19, !dbg !149632
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:185:27
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%112 = load i32, i32* %111, align 8, !dbg !149632
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:185:27
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 %112, i32* %7, align 4, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:185:17
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%114 = load i32, i32* %7, align 4, !dbg !149636
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:188:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%115 = icmp eq i32 %114, 2, !dbg !149638
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:188:20
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+br i1 %115, label %116, label %117, !dbg !149639
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:188:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%104 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149622
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:181:18
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%105 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %104, i32 0, i32 19, !dbg !149623
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:181:26
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%106 = load i32, i32* %105, align 8, !dbg !149623
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:181:26
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 %106, i32* %7, align 4, !dbg !149624
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:181:16
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%107 = load i32, i32* %7, align 4, !dbg !149625
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:182:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%108 = icmp eq i32 %107, 1, !dbg !149627
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:182:20
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+br i1 %108, label %109, label %113, !dbg !149628
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:182:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%102 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149619
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:164:15
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%103 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %102, i32 0, i32 3, !dbg !149620
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:164:23
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+call void @ResetLatch(%struct.Latch* %103), !dbg !149621
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:164:3
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%69 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149581
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:134:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%70 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %69, i32 0, i32 19, !dbg !149582
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:134:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 1, i32* %70, align 8, !dbg !149583
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:134:23
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%65 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:133:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%66 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %65, i32 0, i32 18, !dbg !149579
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:133:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%67 = bitcast %struct.LockRelId* %66 to i8*, !dbg !149580
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:133:20
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_max_workers
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 %67, i8* align 4 %68, i64 8, i1 false), !dbg !149580
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:133:20
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_freeze_max_age
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%247 = load i32*, i32** %7, align 8, !dbg !149850
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1154:44
+
+ Control Deps between GlobalVariable Name: synchronous_commit  autovacuum_freeze_max_age
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+call void @TransactionIdCommitTree(i32 %245, i32 %246, i32* %247), !dbg !149851
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1154:4
+
+ Control Deps between GlobalVariable Name: synchronous_commit  max_wal_senders
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%238 = load i32, i32* @max_wal_senders, align 4, !dbg !149840
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1147:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  max_wal_senders
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+%239 = icmp sgt i32 %238, 0, !dbg !149842
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1147:23
+
+ Control Deps between GlobalVariable Name: synchronous_commit  max_wal_senders
+br i1 %213, label %221, label %214, !dbg !149821
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1122:66
+br i1 %239, label %240, label %241, !dbg !149843
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1147:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  SyncRepStandbyNames
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%16 = load i8*, i8** @SyncRepStandbyNames, align 8, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:30
+
+ Control Deps between GlobalVariable Name: synchronous_commit  SyncRepStandbyNames
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%17 = icmp ne i8* %16, null, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:30
+
+ Control Deps between GlobalVariable Name: synchronous_commit  SyncRepStandbyNames
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+br i1 %17, label %18, label %24, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:30
+
+ Control Deps between GlobalVariable Name: synchronous_commit  SyncRepStandbyNames
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%19 = load i8*, i8** @SyncRepStandbyNames, align 8, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:30
+
+ Control Deps between GlobalVariable Name: synchronous_commit  SyncRepStandbyNames
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%20 = getelementptr i8, i8* %19, i64 0, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:30
+
+ Control Deps between GlobalVariable Name: synchronous_commit  SyncRepStandbyNames
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%21 = load i8, i8* %20, align 1, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:30
+
+ Control Deps between GlobalVariable Name: synchronous_commit  SyncRepStandbyNames
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%22 = sext i8 %21 to i32, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:30
+
+ Control Deps between GlobalVariable Name: synchronous_commit  SyncRepStandbyNames
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%23 = icmp ne i32 %22, 0, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:30
+
+ Control Deps between GlobalVariable Name: synchronous_commit  SyncRepStandbyNames
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+br i1 %23, label %25, label %24, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:6
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%156 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149679
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:259:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%157 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %156, i32 0, i32 18, !dbg !149680
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:259:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%158 = getelementptr inbounds %struct.LockRelId, %struct.LockRelId* %157, i32 0, i32 1, !dbg !149681
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:259:18
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 0, i32* %158, align 4, !dbg !149682
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:259:26
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%153 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149675
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:258:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%154 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %153, i32 0, i32 18, !dbg !149676
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:258:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%155 = getelementptr inbounds %struct.LockRelId, %struct.LockRelId* %154, i32 0, i32 0, !dbg !149677
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:258:18
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 0, i32* %155, align 8, !dbg !149678
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:258:25
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%151 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149672
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:257:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%152 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %151, i32 0, i32 19, !dbg !149673
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:257:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 0, i32* %152, align 8, !dbg !149674
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:257:23
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%147 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149665
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:247:14
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%148 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %147, i32 0, i32 3, !dbg !149666
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:247:22
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%149 = call i32 @WaitLatch(%struct.Latch* %148, i32 17, i64 -1), !dbg !149667
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:247:3
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%110 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149631
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:185:19
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%111 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %110, i32 0, i32 19, !dbg !149632
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:185:27
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%112 = load i32, i32* %111, align 8, !dbg !149632
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:185:27
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 %112, i32* %7, align 4, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:185:17
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%114 = load i32, i32* %7, align 4, !dbg !149636
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:188:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%115 = icmp eq i32 %114, 2, !dbg !149638
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:188:20
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+br i1 %115, label %116, label %117, !dbg !149639
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:188:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%104 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149622
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:181:18
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%105 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %104, i32 0, i32 19, !dbg !149623
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:181:26
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%106 = load i32, i32* %105, align 8, !dbg !149623
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:181:26
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 %106, i32* %7, align 4, !dbg !149624
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:181:16
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%107 = load i32, i32* %7, align 4, !dbg !149625
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:182:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%108 = icmp eq i32 %107, 1, !dbg !149627
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:182:20
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+br i1 %108, label %109, label %113, !dbg !149628
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:182:7
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%102 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149619
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:164:15
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%103 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %102, i32 0, i32 3, !dbg !149620
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:164:23
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+call void @ResetLatch(%struct.Latch* %103), !dbg !149621
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:164:3
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%69 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149581
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:134:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%70 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %69, i32 0, i32 19, !dbg !149582
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:134:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+store i32 1, i32* %70, align 8, !dbg !149583
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:134:23
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%65 = load %struct.PGPROC*, %struct.PGPROC** @MyProc, align 8, !dbg !149578
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:133:2
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%66 = getelementptr inbounds %struct.PGPROC, %struct.PGPROC* %65, i32 0, i32 18, !dbg !149579
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:133:10
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+%67 = bitcast %struct.LockRelId* %66 to i8*, !dbg !149580
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:133:20
+
+ Control Deps between GlobalVariable Name: synchronous_commit  MaxConnections
+br i1 %14, label %15, label %24, !dbg !149564
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:105:26
+call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 %67, i8* align 4 %68, i64 8, i1 false), !dbg !149580
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/syncrep.c:133:20
+
+ Control Deps between GlobalVariable Name: XactReadOnly  max_predicate_locks_per_xact
+br i1 %64, label %65, label %73, !dbg !149808
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1710:19
+%230 = load i32, i32* @max_predicate_locks_per_xact, align 4, !dbg !149955
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1791:12
+
+ Control Deps between GlobalVariable Name: XactReadOnly  max_predicate_locks_per_xact
+br i1 %64, label %65, label %73, !dbg !149808
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1710:19
+%231 = sext i32 %230 to i64, !dbg !149955
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1791:12
+
+ Control Deps between GlobalVariable Name: XactReadOnly  max_predicate_locks_per_xact
+br i1 %64, label %65, label %73, !dbg !149808
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1710:19
+%232 = call %struct.HTAB* @hash_create(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.29.9887, i64 0, i64 0), i64 %231, %struct.HASHCTL* %10, i32 48), !dbg !149956
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/predicate.c:1790:27
+
+ Control Deps between GlobalVariable Name: XLogArchiveMode  XLogArchiveCommand
+br i1 %20, label %21, label %33, !dbg !149562
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:7
+%25 = load i8*, i8** @XLogArchiveCommand, align 8, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: XLogArchiveMode  XLogArchiveCommand
+br i1 %20, label %21, label %33, !dbg !149562
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:7
+%26 = getelementptr i8, i8* %25, i64 0, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: XLogArchiveMode  XLogArchiveCommand
+br i1 %20, label %21, label %33, !dbg !149562
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:7
+%27 = load i8, i8* %26, align 1, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: XLogArchiveMode  XLogArchiveCommand
+br i1 %20, label %21, label %33, !dbg !149562
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:7
+%28 = sext i8 %27 to i32, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: XLogArchiveMode  XLogArchiveCommand
+br i1 %20, label %21, label %33, !dbg !149562
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:7
+%29 = icmp ne i32 %28, 0, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: XLogArchiveMode  XLogArchiveCommand
+br i1 %20, label %21, label %33, !dbg !149562
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:7
+br i1 %29, label %30, label %33, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:7
+
+ Control Deps between GlobalVariable Name: XLogArchiveMode  wal_level
+br i1 %334, label %335, label %341, !dbg !149748
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:1879:9
+%336 = load i32, i32* @wal_level, align 4, !dbg !149748
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:1879:9
+
+ Control Deps between GlobalVariable Name: XLogArchiveMode  wal_level
+br i1 %334, label %335, label %341, !dbg !149748
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:1879:9
+%337 = icmp sge i32 %336, 1, !dbg !149748
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:1879:9
+
+ Control Deps between GlobalVariable Name: XLogArchiveMode  wal_level
+br i1 %334, label %335, label %341, !dbg !149748
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:1879:9
+br i1 %337, label %338, label %341, !dbg !149750
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:1879:9
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_prepared_xacts
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%63 = load i32, i32* @max_prepared_xacts, align 4, !dbg !149579
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6063:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_prepared_xacts
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%67 = icmp slt i32 %63, %66, !dbg !149579
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6063:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_prepared_xacts
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+br i1 %67, label %68, label %81, !dbg !149582
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6063:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_prepared_xacts
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%74 = load i32, i32* @max_prepared_xacts, align 4, !dbg !149579
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6063:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_prepared_xacts
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%78 = call i32 (i8*, ...) @errmsg(i8* getelementptr inbounds ([108 x i8], [108 x i8]* @.str.292, i64 0, i64 0), i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.294, i64 0, i64 0), i32 %74, i32 %77), !dbg !149579
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6063:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%21 = load i32, i32* @MaxBackends, align 4, !dbg !149571
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:201:30
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%23 = add i32 %21, %22, !dbg !149571
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:201:30
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%24 = mul i32 65, %23, !dbg !149571
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:201:30
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%25 = sext i32 %24 to i64, !dbg !149571
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:201:30
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%26 = call i64 @mul_size(i64 1, i64 %25), !dbg !149572
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:201:7
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%13 = load i32, i32* @MaxBackends, align 4, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:199:10
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%15 = add i32 %13, %14, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:199:10
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%16 = mul i32 65, %15, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:199:10
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%17 = sext i32 %16 to i64, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:199:10
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  autovacuum_max_workers
+br i1 %10, label %11, label %28, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:195:6
+%18 = call i64 @mul_size(i64 4, i64 %17), !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/ipc/procarray.c:198:7
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_wal_senders
+br i1 %105, label %106, label %110, !dbg !149676
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:2906:7
+%107 = load i32, i32* @max_wal_senders, align 4, !dbg !149676
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:2906:7
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_wal_senders
+br i1 %105, label %106, label %110, !dbg !149676
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:2906:7
+%108 = icmp sgt i32 %107, 0, !dbg !149676
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:2906:7
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_wal_senders
+br i1 %105, label %106, label %110, !dbg !149676
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:2906:7
+br i1 %108, label %109, label %110, !dbg !149678
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:2906:7
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  vacuum_defer_cleanup_age
+br i1 %276, label %277, label %279, !dbg !149708
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8366:6
+%278 = call i32 @GetOldestXmin(i8 signext 1, i8 signext 0), !dbg !149709
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8367:20
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  vacuum_defer_cleanup_age
+br i1 %276, label %277, label %279, !dbg !149708
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8366:6
+call void @TruncateSUBTRANS(i32 %278), !dbg !149710
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8367:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_locks_per_xact
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%95 = load i32, i32* @max_locks_per_xact, align 4, !dbg !149584
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6066:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_locks_per_xact
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%99 = call i32 (i8*, ...) @errmsg(i8* getelementptr inbounds ([108 x i8], [108 x i8]* @.str.292, i64 0, i64 0), i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.295, i64 0, i64 0), i32 %95, i32 %98), !dbg !149584
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6066:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_locks_per_xact
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%84 = load i32, i32* @max_locks_per_xact, align 4, !dbg !149584
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6066:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_locks_per_xact
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%88 = icmp slt i32 %84, %87, !dbg !149584
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6066:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  max_locks_per_xact
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+br i1 %88, label %89, label %102, !dbg !149587
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6066:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  MaxConnections
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%53 = load i32, i32* @MaxConnections, align 4, !dbg !149574
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6060:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  MaxConnections
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%57 = call i32 (i8*, ...) @errmsg(i8* getelementptr inbounds ([108 x i8], [108 x i8]* @.str.292, i64 0, i64 0), i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.293, i64 0, i64 0), i32 %53, i32 %56), !dbg !149574
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6060:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  MaxConnections
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%42 = load i32, i32* @MaxConnections, align 4, !dbg !149574
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6060:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  MaxConnections
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+%46 = icmp slt i32 %42, %45, !dbg !149574
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6060:3
+
+ Control Deps between GlobalVariable Name: EnableHotStandby  MaxConnections
+br i1 %25, label %26, label %104, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6052:6
+br i1 %46, label %47, label %60, !dbg !149577
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:6060:3
+
+ Control Deps between GlobalVariable Name: fullPageWrites  wal_level
+br i1 %12, label %13, label %14, !dbg !149561
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8588:6
+%23 = load i32, i32* @wal_level, align 4, !dbg !149574
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8611:6
+
+ Control Deps between GlobalVariable Name: fullPageWrites  wal_level
+br i1 %12, label %13, label %14, !dbg !149561
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8588:6
+%24 = icmp sge i32 %23, 2, !dbg !149574
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8611:6
+
+ Control Deps between GlobalVariable Name: fullPageWrites  wal_level
+br i1 %12, label %13, label %14, !dbg !149561
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8588:6
+br i1 %24, label %25, label %35, !dbg !149576
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8611:30
+
+ Control Deps between GlobalVariable Name: log_checkpoints  NBuffers
+br i1 %36, label %38, label %37, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7650:6
+%97 = load i32, i32* @NBuffers, align 4, !dbg !149666
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7695:56
+
+ Control Deps between GlobalVariable Name: log_checkpoints  NBuffers
+br i1 %36, label %38, label %37, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7650:6
+%98 = sitofp i32 %97 to double, !dbg !149666
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7695:56
+
+ Control Deps between GlobalVariable Name: log_checkpoints  NBuffers
+br i1 %36, label %38, label %37, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7650:6
+%99 = fdiv double %96, %98, !dbg !149667
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7695:54
+
+ Control Deps between GlobalVariable Name: log_checkpoints  NBuffers
+br i1 %36, label %38, label %37, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7650:6
+call void (i32, i8*, ...) @elog_finish(i32 15, i8* getelementptr inbounds ([214 x i8], [214 x i8]* @.str.351, i64 0, i64 0), i32 %93, double %99, i32 %100, i32 %101, i32 %102, i64 %103, i32 %105, i64 %106, i32 %108, i64 %109, i32 %111, i32 %112, i64 %113, i32 %115, i64 %116, i32 %118), !dbg !149661
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7690:3
+
+ Control Deps between GlobalVariable Name: log_checkpoints  NBuffers
+br i1 %36, label %38, label %37, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7650:6
+%70 = load i32, i32* @NBuffers, align 4, !dbg !149640
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7679:56
+
+ Control Deps between GlobalVariable Name: log_checkpoints  NBuffers
+br i1 %36, label %38, label %37, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7650:6
+%71 = sitofp i32 %70 to double, !dbg !149640
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7679:56
+
+ Control Deps between GlobalVariable Name: log_checkpoints  NBuffers
+br i1 %36, label %38, label %37, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7650:6
+%72 = fdiv double %69, %71, !dbg !149641
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7679:54
+
+ Control Deps between GlobalVariable Name: log_checkpoints  NBuffers
+br i1 %36, label %38, label %37, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7650:6
+call void (i32, i8*, ...) @elog_finish(i32 15, i8* getelementptr inbounds ([216 x i8], [216 x i8]* @.str.350, i64 0, i64 0), i32 %66, double %72, i32 %73, i32 %74, i32 %75, i64 %76, i32 %78, i64 %79, i32 %81, i64 %82, i32 %84, i32 %85, i64 %86, i32 %88, i64 %89, i32 %91), !dbg !149635
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7674:3
+
+ Control Deps between GlobalVariable Name: wal_level  max_prepared_xacts
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%58 = getelementptr inbounds %struct.ControlFileData, %struct.ControlFileData* %57, i32 0, i32 14, !dbg !149631
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8562:16
+
+ Control Deps between GlobalVariable Name: wal_level  max_prepared_xacts
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+store i32 %56, i32* %58, align 4, !dbg !149632
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8562:35
+
+ Control Deps between GlobalVariable Name: wal_level  max_prepared_xacts
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%16 = load i32, i32* @max_prepared_xacts, align 4, !dbg !149562
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8533:3
+
+ Control Deps between GlobalVariable Name: wal_level  max_prepared_xacts
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%20 = icmp ne i32 %16, %19, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8533:22
+
+ Control Deps between GlobalVariable Name: wal_level  max_prepared_xacts
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+br i1 %20, label %27, label %21, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8533:57
+
+ Control Deps between GlobalVariable Name: wal_level  max_prepared_xacts
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%39 = load i32, i32* @max_prepared_xacts, align 4, !dbg !149605
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8549:31
+
+ Control Deps between GlobalVariable Name: wal_level  max_prepared_xacts
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+store i32 %39, i32* %40, align 4, !dbg !149607
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8549:29
+
+ Control Deps between GlobalVariable Name: wal_level  max_prepared_xacts
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%40 = getelementptr inbounds %struct.ArrayType, %struct.ArrayType* %2, i32 0, i32 1, !dbg !149606
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8549:10
+
+ Control Deps between GlobalVariable Name: wal_level  max_prepared_xacts
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%56 = load i32, i32* @max_prepared_xacts, align 4, !dbg !149629
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8562:37
+
+ Control Deps between GlobalVariable Name: wal_level  XLogArchiveCommand
+br i1 %23, label %24, label %33, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:29
+%25 = load i8*, i8** @XLogArchiveCommand, align 8, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: wal_level  XLogArchiveCommand
+br i1 %23, label %24, label %33, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:29
+%26 = getelementptr i8, i8* %25, i64 0, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: wal_level  XLogArchiveCommand
+br i1 %23, label %24, label %33, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:29
+%27 = load i8, i8* %26, align 1, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: wal_level  XLogArchiveCommand
+br i1 %23, label %24, label %33, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:29
+%28 = sext i8 %27 to i32, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: wal_level  XLogArchiveCommand
+br i1 %23, label %24, label %33, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:29
+%29 = icmp ne i32 %28, 0, !dbg !149566
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:32
+
+ Control Deps between GlobalVariable Name: wal_level  XLogArchiveCommand
+br i1 %23, label %24, label %33, !dbg !149565
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:29
+br i1 %29, label %30, label %33, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:7572:7
+
+ Control Deps between GlobalVariable Name: wal_level  max_locks_per_xact
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%59 = load i32, i32* @max_locks_per_xact, align 4, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8563:37
+
+ Control Deps between GlobalVariable Name: wal_level  max_locks_per_xact
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+store i32 %59, i32* %61, align 8, !dbg !149636
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8563:35
+
+ Control Deps between GlobalVariable Name: wal_level  max_locks_per_xact
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%61 = getelementptr inbounds %struct.ControlFileData, %struct.ControlFileData* %60, i32 0, i32 15, !dbg !149635
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8563:16
+
+ Control Deps between GlobalVariable Name: wal_level  max_locks_per_xact
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%41 = load i32, i32* @max_locks_per_xact, align 4, !dbg !149608
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8550:31
+
+ Control Deps between GlobalVariable Name: wal_level  max_locks_per_xact
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+store i32 %41, i32* %42, align 4, !dbg !149610
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8550:29
+
+ Control Deps between GlobalVariable Name: wal_level  max_locks_per_xact
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%42 = getelementptr inbounds %struct.ArrayType, %struct.ArrayType* %2, i32 0, i32 2, !dbg !149609
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8550:10
+
+ Control Deps between GlobalVariable Name: wal_level  max_locks_per_xact
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%22 = load i32, i32* @max_locks_per_xact, align 4, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8534:3
+
+ Control Deps between GlobalVariable Name: wal_level  max_locks_per_xact
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%26 = icmp ne i32 %22, %25, !dbg !149570
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8534:22
+
+ Control Deps between GlobalVariable Name: wal_level  max_locks_per_xact
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+br i1 %26, label %27, label %65, !dbg !149571
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:6
+
+ Control Deps between GlobalVariable Name: wal_level  MaxConnections
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%53 = load i32, i32* @MaxConnections, align 4, !dbg !149625
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8561:33
+
+ Control Deps between GlobalVariable Name: wal_level  MaxConnections
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+store i32 %53, i32* %55, align 8, !dbg !149628
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8561:31
+
+ Control Deps between GlobalVariable Name: wal_level  MaxConnections
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%55 = getelementptr inbounds %struct.ControlFileData, %struct.ControlFileData* %54, i32 0, i32 13, !dbg !149627
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8561:16
+
+ Control Deps between GlobalVariable Name: wal_level  MaxConnections
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%37 = load i32, i32* @MaxConnections, align 4, !dbg !149602
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8548:27
+
+ Control Deps between GlobalVariable Name: wal_level  MaxConnections
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+store i32 %37, i32* %38, align 4, !dbg !149604
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8548:25
+
+ Control Deps between GlobalVariable Name: wal_level  MaxConnections
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%38 = getelementptr inbounds %struct.ArrayType, %struct.ArrayType* %2, i32 0, i32 0, !dbg !149603
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8548:10
+
+ Control Deps between GlobalVariable Name: wal_level  MaxConnections
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%10 = load i32, i32* @MaxConnections, align 4, !dbg !149557
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8532:3
+
+ Control Deps between GlobalVariable Name: wal_level  MaxConnections
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+%14 = icmp ne i32 %10, %13, !dbg !149560
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8532:18
+
+ Control Deps between GlobalVariable Name: wal_level  MaxConnections
+br i1 %8, label %27, label %9, !dbg !149556
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8531:42
+br i1 %14, label %27, label %15, !dbg !149561
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:8532:49
+
+ Control Deps between GlobalVariable Name: enable_geqo  geqo_threshold
+br i1 %90, label %91, label %100, !dbg !149641
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/allpaths.c:1362:24
+%93 = load i32, i32* @geqo_threshold, align 4, !dbg !149643
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/allpaths.c:1362:44
+
+ Control Deps between GlobalVariable Name: enable_geqo  geqo_threshold
+br i1 %90, label %91, label %100, !dbg !149641
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/allpaths.c:1362:24
+%94 = icmp sge i32 %92, %93, !dbg !149644
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/allpaths.c:1362:41
+
+ Control Deps between GlobalVariable Name: enable_geqo  geqo_threshold
+br i1 %90, label %91, label %100, !dbg !149641
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/allpaths.c:1362:24
+br i1 %94, label %95, label %100, !dbg !149645
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/allpaths.c:1362:12
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+%217 = load i32, i32* @work_mem, align 4, !dbg !149746
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2606:12
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+call void @cost_sort(%struct.Path.4349* %32, %struct.PlannerInfo.4353* %209, %struct.List* %212, double %214, double %215, i32 %216, double 0.000000e+00, i32 %217, double %218), !dbg !149748
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2604:3
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+%187 = load i32, i32* @work_mem, align 4, !dbg !149721
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2597:12
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+call void @cost_sort(%struct.Path.4349* %32, %struct.PlannerInfo.4353* %181, %struct.List* %182, double %184, double %185, i32 %186, double 0.000000e+00, i32 %187, double -1.000000e+00), !dbg !149722
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2595:3
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+%126 = load i32, i32* @work_mem, align 4, !dbg !149664
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2573:12
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+call void @cost_sort(%struct.Path.4349* %31, %struct.PlannerInfo.4353* %118, %struct.List* %121, double %123, double %124, i32 %125, double 0.000000e+00, i32 %126, double %127), !dbg !149666
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2571:3
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+%100 = load i32, i32* @work_mem, align 4, !dbg !149642
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2545:41
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+%101 = sext i32 %100 to i64, !dbg !149642
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2545:41
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+%102 = mul i64 %101, 1024, !dbg !149643
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2545:50
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+%103 = sitofp i64 %102 to double, !dbg !149642
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2545:41
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+%104 = fcmp ogt double %99, %103, !dbg !149644
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2545:39
+
+ Control Deps between GlobalVariable Name: enable_hashagg  work_mem
+br i1 %88, label %90, label %89, !dbg !149633
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2536:6
+br i1 %104, label %105, label %106, !dbg !149645
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/plan/planner.c:2545:6
+
+ Control Deps between GlobalVariable Name: enable_material  cpu_operator_cost
+br i1 %178, label %179, label %186, !dbg !149769
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:22
+%180 = load double, double* %23, align 8, !dbg !149770
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:25
+
+ Control Deps between GlobalVariable Name: enable_material  cpu_operator_cost
+br i1 %178, label %179, label %186, !dbg !149769
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:22
+%182 = fcmp olt double %180, %181, !dbg !149772
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:40
+
+ Control Deps between GlobalVariable Name: enable_material  cpu_operator_cost
+br i1 %178, label %179, label %186, !dbg !149769
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:22
+br i1 %182, label %183, label %186, !dbg !149773
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:6
+
+ Control Deps between GlobalVariable Name: enable_material  work_mem
+br i1 %178, label %179, label %186, !dbg !149769
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:22
+%213 = load i32, i32* @work_mem, align 4, !dbg !149799
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2236:6
+
+ Control Deps between GlobalVariable Name: enable_material  work_mem
+br i1 %178, label %179, label %186, !dbg !149769
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:22
+%214 = sext i32 %213 to i64, !dbg !149799
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2236:6
+
+ Control Deps between GlobalVariable Name: enable_material  work_mem
+br i1 %178, label %179, label %186, !dbg !149769
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:22
+%215 = mul i64 %214, 1024, !dbg !149800
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2236:15
+
+ Control Deps between GlobalVariable Name: enable_material  work_mem
+br i1 %178, label %179, label %186, !dbg !149769
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:22
+%216 = sitofp i64 %215 to double, !dbg !149801
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2236:5
+
+ Control Deps between GlobalVariable Name: enable_material  work_mem
+br i1 %178, label %179, label %186, !dbg !149769
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:22
+%217 = fcmp ogt double %212, %216, !dbg !149802
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2235:68
+
+ Control Deps between GlobalVariable Name: enable_material  work_mem
+br i1 %178, label %179, label %186, !dbg !149769
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2200:22
+br i1 %217, label %218, label %221, !dbg !149803
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/optimizer/path/costsize.c:2234:11
+
+ Control Deps between GlobalVariable Name: pgstat_track_activities  pgstat_track_activity_query_size
+br i1 %16, label %36, label %17, !dbg !149576
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/pgstat.c:2549:31
+%45 = load i32, i32* @pgstat_track_activity_query_size, align 4, !dbg !149606
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/pgstat.c:2571:10
+
+ Control Deps between GlobalVariable Name: pgstat_track_activities  pgstat_track_activity_query_size
+br i1 %16, label %36, label %17, !dbg !149576
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/pgstat.c:2549:31
+%46 = sub i32 %45, 1, !dbg !149607
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/pgstat.c:2571:43
+
+ Control Deps between GlobalVariable Name: pgstat_track_activities  pgstat_track_activity_query_size
+br i1 %16, label %36, label %17, !dbg !149576
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/pgstat.c:2549:31
+%47 = call i32 @pg_mbcliplen(i8* %41, i32 %44, i32 %46), !dbg !149608
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/pgstat.c:2570:9
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%1073 = load i8*, i8** @HbaFileName, align 8, !dbg !150246
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1364:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%1074 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %1072, i8* %1073), !dbg !150246
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1364:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%1054 = load i8*, i8** @HbaFileName, align 8, !dbg !150239
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1363:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%1055 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %1053, i8* %1054), !dbg !150239
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1363:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%1029 = load i8*, i8** @HbaFileName, align 8, !dbg !150224
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1352:4
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%1030 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %1028, i8* %1029), !dbg !150224
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1352:4
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%1011 = load i8*, i8** @HbaFileName, align 8, !dbg !150216
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1342:5
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%1012 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %1010, i8* %1011), !dbg !150216
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1342:5
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%968 = load i8*, i8** @HbaFileName, align 8, !dbg !150193
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1327:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%969 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %967, i8* %968), !dbg !150193
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1327:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%928 = load i8*, i8** @HbaFileName, align 8, !dbg !150162
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1305:5
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%929 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %927, i8* %928), !dbg !150162
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1305:5
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%881 = load i8*, i8** @HbaFileName, align 8, !dbg !150134
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1280:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%882 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %880, i8* %881), !dbg !150134
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1280:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%859 = load i8*, i8** @HbaFileName, align 8, !dbg !150122
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1263:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%860 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %858, i8* %859), !dbg !150122
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1263:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%837 = load i8*, i8** @HbaFileName, align 8, !dbg !150110
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1252:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%838 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %836, i8* %837), !dbg !150110
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1252:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%815 = load i8*, i8** @HbaFileName, align 8, !dbg !150098
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1241:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%816 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %814, i8* %815), !dbg !150098
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1241:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%780 = load i8*, i8** @HbaFileName, align 8, !dbg !150074
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1220:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%781 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %779, i8* %780), !dbg !150074
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1220:3
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%702 = load i8*, i8** @HbaFileName, align 8, !dbg !150028
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1178:4
+
+ Control Deps between GlobalVariable Name: Db_user_namespace  HbaFileName
+br i1 %693, label %694, label %706, !dbg !150027
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1176:7
+%703 = call i32 (i8*, ...) @errcontext(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.13.6401, i64 0, i64 0), i32 %701, i8* %702), !dbg !150028
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/libpq/hba.c:1178:4
+
+ Control Deps between GlobalVariable Name: Logging_collector  Log_directory
+br i1 %5, label %7, label %6, !dbg !149557
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/syslogger.c:524:6
+%24 = load i8*, i8** @Log_directory, align 8, !dbg !149570
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/syslogger.c:566:8
+
+ Control Deps between GlobalVariable Name: Logging_collector  Log_directory
+br i1 %5, label %7, label %6, !dbg !149557
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/syslogger.c:524:6
+%25 = call i32 @mkdir(i8* %24, i32 448) #9, !dbg !149571
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/postmaster/syslogger.c:566:2
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  wal_receiver_status_interval
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+%16 = load i32, i32* @wal_receiver_status_interval, align 4, !dbg !149574
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:708:10
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  wal_receiver_status_interval
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+%17 = mul i32 %16, 1000, !dbg !149575
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:708:39
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  wal_receiver_status_interval
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+%18 = call signext i8 @TimestampDifferenceExceeds(i64 %14, i64 %15, i32 %17), !dbg !149576
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:707:7
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  wal_receiver_status_interval
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+%19 = icmp ne i8 %18, 0, !dbg !149576
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:707:7
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  wal_receiver_status_interval
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+br i1 %19, label %21, label %20, !dbg !149577
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:707:6
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  vacuum_defer_cleanup_age
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+%26 = call i32 @GetOldestXmin(i8 signext 1, i8 signext 0), !dbg !149583
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:722:9
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  vacuum_defer_cleanup_age
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+store i32 %26, i32* %5, align 4, !dbg !149584
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:722:7
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  vacuum_defer_cleanup_age
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+%28 = load i32, i32* %5, align 4, !dbg !149588
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:729:16
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  vacuum_defer_cleanup_age
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+%29 = icmp ult i32 %27, %28, !dbg !149589
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:729:14
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  vacuum_defer_cleanup_age
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+br i1 %29, label %30, label %33, !dbg !149590
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:729:6
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  vacuum_defer_cleanup_age
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+%35 = load i32, i32* %5, align 4, !dbg !149595
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:736:26
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  vacuum_defer_cleanup_age
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+store i32 %35, i32* getelementptr inbounds (%struct.anon.2274, %struct.anon.2274* @feedback_message, i32 0, i32 0), align 8, !dbg !149596
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:736:24
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  vacuum_defer_cleanup_age
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+%37 = load i32, i32* getelementptr inbounds (%struct.anon.2274, %struct.anon.2274* @feedback_message, i32 0, i32 0), align 8, !dbg !149600
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:740:21
+
+ Control Deps between GlobalVariable Name: hot_standby_feedback  vacuum_defer_cleanup_age
+br i1 %10, label %12, label %11, !dbg !149567
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:698:6
+call void (i32, i8*, ...) @elog_finish(i32 13, i8* getelementptr inbounds ([46 x i8], [46 x i8]* @.str.18.8747, i64 0, i64 0), i32 %37, i32 %38), !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/replication/walreceiver.c:739:2
+
+ Control Deps between GlobalVariable Name: log_lock_waits  autovacuum_max_workers
+br i1 %273, label %274, label %389, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1147:22
+%334 = load i32, i32* %15, align 4, !dbg !149884
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1182:8
+
+ Control Deps between GlobalVariable Name: log_lock_waits  autovacuum_max_workers
+br i1 %273, label %274, label %389, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1147:22
+%335 = icmp eq i32 %334, 2, !dbg !149886
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1182:21
+
+ Control Deps between GlobalVariable Name: log_lock_waits  autovacuum_max_workers
+br i1 %273, label %274, label %389, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1147:22
+br i1 %335, label %336, label %350, !dbg !149887
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1182:8
+
+ Control Deps between GlobalVariable Name: log_lock_waits  MaxConnections
+br i1 %273, label %274, label %389, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1147:22
+%334 = load i32, i32* %15, align 4, !dbg !149884
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1182:8
+
+ Control Deps between GlobalVariable Name: log_lock_waits  MaxConnections
+br i1 %273, label %274, label %389, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1147:22
+%335 = icmp eq i32 %334, 2, !dbg !149886
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1182:21
+
+ Control Deps between GlobalVariable Name: log_lock_waits  MaxConnections
+br i1 %273, label %274, label %389, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1147:22
+br i1 %335, label %336, label %350, !dbg !149887
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/storage/lmgr/proc.c:1182:8
+
+ Control Deps between GlobalVariable Name: enableFsync  CommitDelay
+br i1 %227, label %228, label %236, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1137:38
+%234 = load i32, i32* @CommitDelay, align 4, !dbg !149837
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1139:14
+
+ Control Deps between GlobalVariable Name: enableFsync  CommitDelay
+br i1 %227, label %228, label %236, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1137:38
+%235 = sext i32 %234 to i64, !dbg !149837
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1139:14
+
+ Control Deps between GlobalVariable Name: enableFsync  CommitDelay
+br i1 %227, label %228, label %236, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1137:38
+call void @pg_usleep(i64 %235), !dbg !149838
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1139:4
+
+ Control Deps between GlobalVariable Name: enableFsync  CommitSiblings
+br i1 %227, label %228, label %236, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1137:38
+%229 = load i32, i32* @CommitSiblings, align 4, !dbg !149834
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1138:26
+
+ Control Deps between GlobalVariable Name: enableFsync  CommitSiblings
+br i1 %227, label %228, label %236, !dbg !149833
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1137:38
+%230 = call signext i8 @MinimumActiveBackends(i32 %229), !dbg !149835
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xact.c:1138:4
+
+ Control Deps between GlobalVariable Name: enableFsync  wal_level
+br i1 %6, label %8, label %7, !dbg !149559
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:9032:6
+%9 = load i32, i32* @wal_level, align 4, !dbg !149561
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:9049:7
+
+ Control Deps between GlobalVariable Name: enableFsync  wal_level
+br i1 %6, label %8, label %7, !dbg !149559
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:9032:6
+%10 = icmp sge i32 %9, 1, !dbg !149561
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:9049:7
+
+ Control Deps between GlobalVariable Name: enableFsync  wal_level
+br i1 %6, label %8, label %7, !dbg !149559
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:9032:6
+br i1 %10, label %15, label %11, !dbg !149563
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlog.c:9049:22
+
+ Control Deps between GlobalVariable Name: log_duration  log_min_duration_statement
+br i1 %55, label %56, label %74, !dbg !149602
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/tcop/postgres.c:2078:7
+%66 = load i8, i8* %9, align 1, !dbg !149612
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/tcop/postgres.c:2082:8
+
+ Control Deps between GlobalVariable Name: log_duration  log_min_duration_statement
+br i1 %55, label %56, label %74, !dbg !149602
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/tcop/postgres.c:2078:7
+%67 = sext i8 %66 to i32, !dbg !149612
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/tcop/postgres.c:2082:8
+
+ Control Deps between GlobalVariable Name: log_duration  log_min_duration_statement
+br i1 %55, label %56, label %74, !dbg !149602
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/tcop/postgres.c:2078:7
+%68 = icmp ne i32 %67, 0, !dbg !149612
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/tcop/postgres.c:2082:8
+
+ Control Deps between GlobalVariable Name: log_duration  log_min_duration_statement
+br i1 %55, label %56, label %74, !dbg !149602
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/tcop/postgres.c:2078:7
+br i1 %68, label %69, label %73, !dbg !149614
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/tcop/postgres.c:2082:17
+
+ Control Deps between GlobalVariable Name: log_min_messages  client_min_messages
+br i1 %26, label %30, label %27, !dbg !149597
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlogutils.c:187:35
+%28 = load i32, i32* @client_min_messages, align 4, !dbg !149598
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlogutils.c:187:38
+
+ Control Deps between GlobalVariable Name: log_min_messages  client_min_messages
+br i1 %26, label %30, label %27, !dbg !149597
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlogutils.c:187:35
+%29 = icmp sle i32 %28, 13, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlogutils.c:187:58
+
+ Control Deps between GlobalVariable Name: log_min_messages  client_min_messages
+br i1 %26, label %30, label %27, !dbg !149597
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlogutils.c:187:35
+br i1 %29, label %30, label %51, !dbg !149600
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/access/transam/xlogutils.c:187:8
+
+ Control Deps between GlobalVariable Name: client_min_messages  log_min_messages
+br i1 %24, label %25, label %33, !dbg !149597
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:844:34
+%30 = load i32, i32* @log_min_messages, align 4, !dbg !149602
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:845:35
+
+ Control Deps between GlobalVariable Name: client_min_messages  log_min_messages
+br i1 %24, label %25, label %33, !dbg !149597
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:844:34
+%31 = icmp eq i32 %30, 15, !dbg !149603
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:845:52
+
+ Control Deps between GlobalVariable Name: client_min_messages  log_min_messages
+br i1 %24, label %25, label %33, !dbg !149597
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:844:34
+br i1 %31, label %32, label %33, !dbg !149604
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:843:6
+
+ Control Deps between GlobalVariable Name: client_min_messages  log_min_messages
+br i1 %24, label %25, label %33, !dbg !149597
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:844:34
+%27 = load i32, i32* @log_min_messages, align 4, !dbg !149599
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:845:15
+
+ Control Deps between GlobalVariable Name: client_min_messages  log_min_messages
+br i1 %24, label %25, label %33, !dbg !149597
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:844:34
+%28 = icmp slt i32 %26, %27, !dbg !149600
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:845:13
+
+ Control Deps between GlobalVariable Name: client_min_messages  log_min_messages
+br i1 %24, label %25, label %33, !dbg !149597
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:844:34
+br i1 %28, label %32, label %29, !dbg !149601
+InstLoc: /root/Desktop/postgresql-9.2.1/src/backend/catalog/dependency.c:845:32

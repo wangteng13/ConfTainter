@@ -1,0 +1,34 @@
+Software,Reproduced Bug,TCub
+Squid,2604,yes
+Squid,579,no
+Redis,8349,yes
+Redis,7236,yes
+Redis,7898,yes
+Redis,4634,yes
+Redis,5025,yes
+Redis,5012,yes
+Redis,3252,yes
+Redis,2357,yes
+Redis,398,yes
+Redis,4125,yes
+Redis,4904,yes
+Redis,8958,yes
+Redis,4436,yes
+pgsql,BUG #3589,yes
+Mysql,75134,yes
+Mysql,30651,yes
+Mysql,20708,yes
+Mysql,32213,yes
+Mysql,27358,yes
+Mysql,20627,yes
+Mysql,28908,yes
+Mysql,28808,yes
+Mysql,27681,yes
+Mysql,3829,yes
+Mysql,49171,yes
+Mariadb,26140,yes
+Mariadb,28291,yes
+Mariadb,18074,yes
+Mariadb,4774,yes
+Mariadb,17798,yes
+Mariadb,5001,no

@@ -1,0 +1,8 @@
+Software,New Bug ID,Affected Versions,Status,Option
+Mysql,1,v5.7-latest,Confirmed,low_priority_updates
+Redis,2,v6.2-v7.0,Fixed,save
+Squid,3,v5.0-latest,Pending,ipcache_high
+Squid,4,v5.0-latest,Pending,memory_replacement_policy
+Postgresql,5,v14.2-latest,Confirmed,log_hostname
+,,,,
+,"Note: the new bug ID is hidden for double-blind review, and will be public after the paper is accepted.",,,

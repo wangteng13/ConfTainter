@@ -1,0 +1,15 @@
+GlobalVariable Name: index_substr_if_maxlen  index_substr_any_len
+%191 = icmp ult i64 %190, %186, !dbg !299064
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/schema_init.c:1055:40
+
+GlobalVariable Name: index_substr_if_maxlen  index_substr_any_step
+%374 = icmp ugt i64 %369, %373, !dbg !299205
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/schema_init.c:1111:17
+
+GlobalVariable Name: index_substr_any_len  index_substr_any_step
+%213 = icmp ugt i64 %208, %212, !dbg !299064
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/schema_init.c:1055:40
+
+GlobalVariable Name: index_substr_if_minlen  index_substr_if_maxlen
+%215 = icmp ult i64 %212, %214, !dbg !299076
+InstLoc: /root/Desktop/openldap-OPENLDAP_REL_ENG_2_4_33/servers/slapd/schema_init.c:926:24

@@ -1,0 +1,26 @@
+GlobalVariable Name: _SquidConfig.Timeout.icp_query_max  _SquidConfig.Timeout.deadPeer
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:550:19
+GlobalVariable Name: _SquidConfig.Timeout.icp_query_max  _SquidConfig.negativeDnsTtl
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:550:19
+GlobalVariable Name: _SquidConfig.Timeout.icp_query_max  _SquidConfig.Timeout.connect
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:550:19
+GlobalVariable Name: _SquidConfig.Timeout.icp_query_max  _SquidConfig.tcpRcvBufsz
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/neighbors.c:550:19
+GlobalVariable Name: _SquidConfig.comm_incoming.icp_average  _SquidConfig.comm_incoming.icp_min_poll
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/comm_select.c:269:31
+GlobalVariable Name: _SquidConfig.comm_incoming.icp_average  _SquidConfig.comm_incoming.icp_min_poll
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/comm_select.c:269:31
+GlobalVariable Name: _SquidConfig.comm_incoming.icp_average  _SquidConfig.comm_incoming.icp_min_poll
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/comm_select.c:269:31
+GlobalVariable Name: _SquidConfig.comm_incoming.icp_average  _SquidConfig.comm_incoming.icp_min_poll
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/comm_select.c:269:31
+GlobalVariable Name: _SquidConfig.comm_incoming.http_average  _SquidConfig.comm_incoming.http_min_poll
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/comm_select.c:296:32
+GlobalVariable Name: _SquidConfig.comm_incoming.dns_average  _SquidConfig.comm_incoming.dns_min_poll
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/comm_select.c:907:31
+GlobalVariable Name: _SquidConfig.comm_incoming.dns_average  _SquidConfig.comm_incoming.dns_min_poll
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/comm_select.c:907:31
+GlobalVariable Name: _SquidConfig.comm_incoming.dns_average  _SquidConfig.comm_incoming.dns_min_poll
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/comm_select.c:907:31
+GlobalVariable Name: _SquidConfig.comm_incoming.dns_average  _SquidConfig.comm_incoming.dns_min_poll
+InstLoc: /root/Desktop/squid-2.4.STABLE1/src/comm_select.c:907:31

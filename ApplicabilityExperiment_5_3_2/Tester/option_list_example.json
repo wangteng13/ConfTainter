@@ -1,0 +1,14 @@
+{
+    "1": {
+        "key": "binlog_cache_size",
+        "property": "0",  
+        "type": "NUM",
+        "constraint": "[4096,4294967296]"
+    }, 
+    "2": {
+        "key": "general_log", 
+        "type": "BOOL" ,
+        "property": "1", 
+        "constraint": "[ON, OFF]"
+    }
+}
