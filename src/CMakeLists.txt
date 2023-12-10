@@ -69,7 +69,7 @@ if(Boost_FOUND)
 else()
     #link llvm component
     message(STATUS "Found llvm_libs ${llvm_libs}")
-    target_link_libraries(tainter ${llvm_libs} Boost::serialization)
+    target_link_libraries(tainter ${llvm_libs})
 
     target_link_libraries(tainter
         pthread

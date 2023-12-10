@@ -1,4 +1,4 @@
-#include "TInfer.h"
+#include "tainter.h"
 
 int main(int argc, char** argv){
 	string ir_file = string(argv[1]);	//input the ir path
